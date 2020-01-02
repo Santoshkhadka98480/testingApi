@@ -12,32 +12,32 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.foodmandu.ui.gallery.GalleryFragment"
+        android:id="@+id/nav_favourites"
+        android:name="com.example.foodmandu.ui.Favourates.FavouratesFragment"
         android:label="@string/menu_favourites"
         tools:layout="@layout/activity_login" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.foodmandu.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_basket"
+        android:name="com.example.foodmandu.ui.History.HistoryhowFragment"
         android:label="@string/menu_basket"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/activity_login" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.foodmandu.ui.tools.ToolsFragment"
+        android:id="@+id/nav_history"
+        android:name="com.example.foodmandu.ui.More.MoreFragment"
         android:label="@string/menu_history"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/activity_login" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.foodmandu.ui.share.ShareFragment"
+        android:id="@+id/nav_notifications"
+        android:name="com.example.foodmandu.ui.Notification.NotificationFragment"
         android:label="@string/menu_notification"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/activity_login" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.foodmandu.ui.send.SendFragment"
+        android:id="@+id/nav_more"
+        android:name="com.example.foodmandu.ui.baskets.BasketFragment"
         android:label="@string/menu_more"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/activity_login" />
 </navigation>

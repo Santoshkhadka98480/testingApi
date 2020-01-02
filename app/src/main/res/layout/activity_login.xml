@@ -21,6 +21,7 @@
     <EditText
         android:id="@+id/etEmail"
         style="@style/LoginTextFieldStyle"
+        android:inputType="textEmailAddress"
         android:layout_marginTop="60dp"
         android:background="@drawable/button_round_white"
         android:drawableLeft="@drawable/ic_email"

@@ -1,6 +1,8 @@
 package com.example.foodmandu.adaptter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,13 +11,13 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.foodmandu.LoginActivity;
 import com.example.foodmandu.R;
 import com.example.foodmandu.model.Categories;
 
 import java.util.List;
 
 public class CategoriesViewPagerAdapter extends RecyclerView.Adapter<CategoriesViewPagerAdapter.CategoryHolder> {
-
     Context context;
     List<Categories> categoriesAdpater;
 
@@ -51,6 +53,7 @@ public class CategoriesViewPagerAdapter extends RecyclerView.Adapter<CategoriesV
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageCategories);
+
 
         }
     }

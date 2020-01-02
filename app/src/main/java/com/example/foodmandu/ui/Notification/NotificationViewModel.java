@@ -1,14 +1,14 @@
-package com.example.foodmandu.ui.share;
+package com.example.foodmandu.ui.Notification;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class NotificationViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public NotificationViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is share fragment");
     }

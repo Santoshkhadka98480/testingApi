@@ -16,7 +16,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:src="@drawable/slider1" />
+        android:src="@drawable/gallery" />
 
     <EditText
         android:id="@+id/etFirstName"
@@ -59,6 +59,7 @@
     <EditText
         android:id="@+id/etPasswordR"
         android:layout_marginTop="20dp"
+        android:inputType="textPassword"
         style="@style/LoginTextFieldStyle"
         android:drawableLeft="@drawable/ic_panel"
         android:background="@drawable/button_round_white"
@@ -68,6 +69,7 @@
         android:id="@+id/etCPasswordR"
         android:layout_marginTop="20dp"
         style="@style/LoginTextFieldStyle"
+        android:inputType="textPassword"
         android:drawableLeft="@drawable/ic_panel"
         android:background="@drawable/button_round_white"
         android:hint="Confirm Password" />

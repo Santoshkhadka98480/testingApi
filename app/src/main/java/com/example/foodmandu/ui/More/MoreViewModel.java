@@ -1,16 +1,16 @@
-package com.example.foodmandu.ui.send;
+package com.example.foodmandu.ui.More;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class MoreViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public MoreViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("This is tools fragment");
     }
 
     public LiveData<String> getText() {

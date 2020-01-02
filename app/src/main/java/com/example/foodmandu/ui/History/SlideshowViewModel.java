@@ -1,4 +1,4 @@
-package com.example.foodmandu.ui.slideshow;
+package com.example.foodmandu.ui.History;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

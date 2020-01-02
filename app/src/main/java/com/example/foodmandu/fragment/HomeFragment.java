@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -34,6 +35,9 @@ public class HomeFragment extends Fragment {
     private int position;
     private static final int PAGE_NUM=4;
 
+    ImageView imageCategories;
+
+
     private Handler handler=new Handler();
     private Runnable runnable=new Runnable() {
         @Override
@@ -56,13 +60,7 @@ public class HomeFragment extends Fragment {
         runnable.run();
 
         rvCategories = view.findViewById(R.id.rvCategories);
-        rvCategories.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+
         Categories categories = new Categories(R.drawable.slider1);
         categoriesList = categories.getListcategory();
         categoriesList.add(new Categories(R.drawable.restaurants));
@@ -70,8 +68,6 @@ public class HomeFragment extends Fragment {
         categoriesList.add(new Categories(R.drawable.bakeries));
         categoriesList.add(new Categories(R.drawable.refreshment));
         categoriesList.add(new Categories(R.drawable.organic));
-
-
 
         CategoriesViewPagerAdapter adapter1 = new CategoriesViewPagerAdapter(getActivity(),categoriesList);
         rvCategories.setAdapter(adapter1);
